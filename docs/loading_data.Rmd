@@ -1,0 +1,19 @@
+---
+title: "loading_data"
+output: pdf_document
+date: "2023-12-05"
+---
+
+```{r}
+library(QuinonezChapter16)
+library(tidyverse)
+```
+
+
+```{r}
+data("Flagstaff_Weather")
+
+ggplot( data=Flagstaff_Weather, aes(x=DATE, y=SNOW)) +
+  geom_point()
+
+```
